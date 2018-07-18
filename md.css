@@ -1,0 +1,152 @@
+#container {
+	background-color: #e7e7e7;
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	/* flex-wrap: wrap; */
+}
+
+header img {
+	display: block;
+	margin: 0 auto;
+}
+
+a {
+	text-decoration: none;
+	text-decoration-color: #890101;
+}
+
+a:link, a:visited {
+	color: #890101;
+} 
+
+a:hover {
+ color: #df3030;
+}
+
+nav li {
+	list-style: none;
+	text-align: center;
+	color: #890101;
+	font-family: "Book Antiqua", "Palatino Linotype", Georgia, serif;
+}
+
+.lt {
+	font-weight: bold;
+	font-size: 0.9em;
+}
+
+.st {
+	font-size: 0.8em;
+}
+
+header hr {
+	width: 58%;
+	min-width: 270px;
+}
+
+article {
+	font-family: "Hoefler Text", "Baskerville old face", Garamond, "Times New Roman", serif;
+	margin: 6% 3%;
+}
+
+h2 {
+	font-weight: normal;
+	font-size: 2em;
+	text-align: center;
+	margin-top: 12%;
+}
+
+article p {
+	line-height: 1.4em;
+	font-family:"Book Antiqua", "Palatino Linotype", Georgia, serif !important;
+}
+
+.amp {
+	font-family: Baskerville, Garamond, Palatino, "Palatino Linotype", "Hoefler Text", "Times New Roman", serif;
+}
+
+section h2 {
+	font-size: 1.6em;
+	margin-top: 0;
+}
+
+section.imgs {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	text-transform: uppercase;
+	font-family: "Book Antiqua", "Palatino Linotype", Georgia, serif;
+}
+
+section.imgs .img {
+	width: 31.33%;
+	text-align: center;
+	margin-right: 2%;
+	margin-bottom: 2%;
+}
+
+section.imgs img {
+	width: 100%;
+}
+
+
+section .st {
+	font-size: 0.6em;
+}
+
+footer {
+	background: url("bg1.png") 50% 0 repeat-x;
+	text-align: center;
+	font-family:"Book Antiqua", "Palatino Linotype", Georgia, serif !important;
+}
+
+footer #helper {
+	height: 20%;
+}
+
+footer #xhelper {
+	height: 10%;
+}
+
+footer p {
+	font-size: 0.8em;
+	opacity: 0.8;
+	margin: 1.2em auto;
+	width: 80%;
+	margin-bottom: 0;
+}
+
+
+section hr {
+	display: inline-block;
+	width: 25%;
+	position: relative;
+	top: 0.35em;
+}
+
+.lhr {
+	margin-right: 1.2em;
+}
+
+.rhr {
+	margin-left: 1.2em;
+}
+
+@media screen and (max-width: 870px) {
+	section hr {
+		width: 20%;
+	}
+}
+
+@media screen and (max-width: 786px) {
+	section hr {
+		width: 13%;
+	}
+}
+
+@media screen and (max-width: 706px) {
+	section hr {
+		display: none;
+	}
+}
