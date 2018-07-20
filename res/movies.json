@@ -1,0 +1,38 @@
+{
+    "title": "The Basics - Networking",
+    "description": "Your app fetched this from a remote endpoint!",
+    "movies": [
+      {
+        "id": "1", 
+        "title": "Star Wars", 
+        "releaseYear": "1977",
+        "url": "http://120.79.192.233/static/res/1.png"
+      },
+      {
+        "id": "2",
+        "title": "Back to the Future",
+        "releaseYear": "1985",
+        "url": "http://120.79.192.233/static/res/2.png"
+      },
+      {
+        "id": "3",
+        "title": "The Matrix",
+        "releaseYear": "1999",
+        "url": "http://120.79.192.233/static/res/3.png"
+      },
+      {
+        "id": "4",
+        "title": "Inception",
+        "releaseYear": "2010",
+        "url": "http://120.79.192.233/static/res/4.png"
+      },
+      { 
+        "id": "5",
+        "title": "Interstellar",
+        "releaseYear": "2014",
+        "url": "http://120.79.192.233/static/res/5.png"
+      }
+    ]
+  }
+  
+  
