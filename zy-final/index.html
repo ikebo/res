@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+    <title>室内设计</title>
+    <script src="./jquery.color.js"></script>
+    <style>
+        @import url('./sm.css') screen and (max-width:768px);
+        @import url('./md.css') screen and (min-width:768px);
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <nav role="navigation" />
+                <div id="nav-left">
+                    <a href="">
+                        <img src="./logo.png" alt="logo" />
+                    </a>
+                </div>
+
+                <div id="nav-xright">
+                    <ul>
+                        <li><a href="">首页</a></li>
+                        <li class="toggle-li">
+                            <a href="">关于</a>  
+                            <ul class="toggle-ul" data-status=0>
+                                <li><a href="">关于</a></li>
+                                <li><a href="">关于我们</a></li>
+                                <li><a href="">公司荣誉</a></li>
+                                <li><a href="">设计团队</a></li>
+                                <li><a href="">服务流程</a></li>
+                            </ul>
+                        </li>
+                        <li class="toggle-li">
+                            <a href="">产品</a>
+                            <ul class="toggle-ul" data-status=0>
+                                <li><a href="">全部</a></li>
+                                <li><a href="">建材</a></li>
+                                <li><a href="">家具</a></li>
+                                <li><a href="">软装</a></li>
+                                <li><a href="">家电</a></li>
+                            </ul>
+                        </li>
+                        <li class="toggle-li">
+                            <a href="">案例</a>
+                            <ul class="toggle-ul" data-status=0>
+                                <li><a href="">全部</a></li>
+                                <li><a href="">客厅设计</a></li>
+                                <li><a href="">卧室设计</a></li>
+                                <li><a href="">厨房设计</a></li>
+                            </ul>
+                        </li>
+                        <li class="toggle-li">
+                            <a href="">资讯</a>
+                            <ul class="toggle-ul" data-status=0>
+                                <li><a href="">全部</a></li>
+                                <li><a href="">装修搭配</a></li>
+                                <li><a href="">软装改造</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">联系</a></li>
+                    </ul>
+                    <div id="nav-xphone">
+                        <img src="./btele.png" alt="tele" />
+                        <span>4000-000-000</span>
+                    </div>
+                </div>
+
+                <div id="nav-right">
+                    <img src="./icon_menu_pre.png" alt="icon_menu" />
+                </div>
+            </nav>
+
+            <div id="toggle-nav" data-status=0 >
+                <div id="nav-phone">
+                    <img src="./btele.png" alt="tele" />
+                    <span>4000-000-000</span>
+                </div>
+                <ul>
+                    <li><a href="">网站首页</a></li>
+                    <li><a href="">关于</a></li>
+                    <li><a href="">产品</a></li>
+                    <li><a href="">案例</a></li>
+                    <li><a href="">资讯</a></li>
+                    <li><a href="">联系</a></li>
+                </ul>                    
+            </div>
+        
+        </div>
+        
+        <!-- 轮播图 -->
+        <div id="display">
+
+        </div>
+
+        <!-- 简介 -->
+        <div id="about">
+            <div class="about-row">
+                <a href="">
+                    <img src="./home.png" alt="关于我们" />
+                    <h3>关于我们</h3>
+                    <p>
+                        室内设计（香港）有限公司作为一家致力于
+                        <br>
+                        商业办公、酒店会所、别墅私宅、陶瓷
+                        <br>
+                        展厅空间的专业设计机构
+                    </p>
+                </a>
+                <a href="">
+                    <img src="./honor.png" alt="公司荣誉" />
+                    <h3>公司荣誉</h3>
+                    <p>
+                        2016中国建筑装饰设计大奖最佳酒店设计
+                        <br>
+                        2015中国建筑学会室内设计分会会员
+                        <br>
+                        2014中国室内装饰协会会员
+                    </p>
+                </a>
+            </div>
+            
+            <div class="about-row">
+                <a href="">
+                    <img src="./team.png" alt="设计团队" />
+                    <h3>设计团队</h3>
+                    <p>
+                        团队主创设计来自亚洲顶级室内设计公司
+                        <br>
+                        有着丰富的室内设计创意及设计理念
+                        <br>
+                        荣获多项国内外设计大奖
+                    </p>
+                </a>
+                <a href="">
+                    <img src="./service.png" alt="设计团队" />
+                    <h3>服务流程</h3>
+                    <p>
+                        服务流程是：设计咨询，项目分析，方案
+                        <br>
+                        设计，图纸深化，软装材料，后续跟进
+                        <br>
+                        咨询热线：4000-123-456
+                    </p>
+                </a>
+            </div>
+            
+        </div>
+
+        <!-- 详情 -->
+        <div id="detail">
+            <div class="detail-row">
+                <div id="detail-us-img">
+                    
+                </div>
+                <div id="detail-us">
+                    <h2>关于我们</h2>
+                    <p>
+                        室内设计有限公司是中国建筑装饰协会会员单位，揭阳市建筑装饰行业协会家装委员会副主任
+                        单位，是首批取得广州家庭装饰装修企业资格证的单位之一。"做品味装饰，创名牌企业"，正以
+                        饱满的热情和自信一路前行！
+                    </p>
+                    <br />
+                    <p>    
+                        其“品味装饰”商标具有较高的知名度，深受消费者的喜爱与信任。公司成立于1998年，已经成为
+                        中国室内装饰行业领军品牌，专业从事家居、商铺、酒店等设计与施工。在2014年10月15日，公
+                        司获得广州市工商行政管理局的审批，升格为集团企业，并正式设立广东室内装饰集团。目前已建立了
+                        完整的设计、施工、材料以及客户服务系统，取得了建设部门颁发的设计专项乙级，施工专项贰级资
+                        质,通过了ISO9001国际质量体系认证，2016年被评定为广东省著名商标。
+                    </p> 
+                    
+                    <a href="">更多介绍</a>
+                </div>
+            </div>
+            
+            <div class="detail-row">
+                <div id="detail-team">
+                    <h2>设计团队</h2>
+                    <p id="detail-sp">
+                        室内设计精英团队主创设计来自亚洲顶级室内设计公司，荣获多项国内外设
+                        计大奖，是一批具有强烈的创作欲望、善于思考、不断进取的设计师精英。
+                    </p>
+                    <br />
+                    <p>    
+                        团队有着丰富的室内设计创意及设计理念，更是有着多年的别墅豪宅、
+                        商业空间设计经验，且均来自美术学院、美工学院、美术大学等专业
+                        设计院校背景，更是有着国际化的视野及敏锐的时尚触觉，他们崇尚以
+                        设计为核心，设计创造价值，提出“无创意”“不设计”的设计理念服务每个客户。
+                    </p> 
+                    
+                    <a href="">更多介绍</a>
+                </div>
+                <div id="detail-team-img">
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- adver -->
+        <div id="adver">
+            <div id="xbg">
+            <div id="adver-house">
+                <div class="adver-title">
+                    <h2>装修案例</h2>
+                    <span></span>
+                </div>
+                <div id="house-content">
+                    <div class="house-item">
+                        <a href="">
+                            <img src="./adver_house_1.jpg" alt="house1" />
+                        </a>
+                    </div>
+                    
+                    <div class="house-item">
+                        <a href="">
+                            <img src="./adver_house_2.jpg" alt="house2" />
+                        </a>
+                    </div>
+
+                    <div class="house-item xhouse">
+                        <a href="">
+                            <img src="./adver_house_3.jpg" alt="house3" />
+                        </a>
+                    </div>
+
+                    <div class="house-item xhouse">
+                        <a href="">
+                            <img src="./adver_house_4.jpg" alt="house4" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- 宣传视频 -->
+            <div id="adver-video">
+                <div class="adver-title">
+                    <h2>宣传视频</h2>
+                    <span></span>
+                </div>
+
+                <div id="video-content">
+                    <video src="https://images.metinfo.cn/m/m1156ui009/305/upload/m1156ui009/305/video/video.mp4"
+                        autoplay controls>
+                    </video>
+                </div>
+            </div>
+            </div>
+            <!-- 新闻资讯 -->
+            <div id="adver-news">
+                <div class="adver-title">
+                    <h2>新闻资讯</h2>
+                    <span></span>
+                </div>
+
+                <div id="news-list">
+                    <div class="news-item">
+                        <img src="./news_1.jpg" alt="news1" />
+                        <a href="">
+                            <strong>宅在“云端”里 简约却不简单的文艺美宅</strong>
+                        </a>
+                        <font>2016-07-19</font>
+                        <p>
+                            木色为主的家具将大开间包裹成典型的日式风格。
+                            由于空间的长条形状，一切软装看似简单而信手拈来，实则藏着Tin..
+                        </p>
+                        <span>
+                            标签:
+                            <a href="">云端</a>
+                            <a href="">简约</a>
+                            <a href="">文艺</a>
+                            <a href="">美宅</a>
+                        </span>   
+                    </div>
+                    <div class="news-item">
+                        <img src="./news_2.png" alt="news2" />
+                        <a href="">
+                            <strong>让家春暖花开 美丽姑娘的优雅出租屋</strong>
+                        </a>
+                        <font>2016-07-19</font>
+                        <p>
+                            两层楼共六十多平，加上三十多平的天台，沉静租下这个房子才花了1600!
+                            尽管房子最初的模样惨不忍睹，但绿意满..
+                        </p>
+                        <span>
+                            标签:
+                            <a href="">春暖花开</a>
+                            <a href="">优雅</a>
+                            <a href="">出租屋</a>
+                        </span>      
+                    </div>
+                    <div class="news-item">
+                        <img src="./news_3.jpg" alt="news3" />
+                        <a href="">
+                            <strong>走在潮流顶端 小建材打造现代时尚家装</strong>
+                        </a>
+                        <font>2016-07-19</font>
+                        <p>
+                            各种各样的家装风格哪个才是时尚的你的最爱呢?走在潮流的尖端，
+                            把现代时尚的元素融入家居，一款细小的面板也能很..
+                        </p>
+                        <span>
+                            标签:
+                            <a href="">潮流</a>
+                            <a href="">时尚家装</a>
+                            <a href="">小建材</a>
+                        </span>
+                          
+                    </div>
+                    <div class="news-item">
+                        <img src="./news_4.jpg" alt="news4" />
+                        <a href="">
+                            <strong>绿植装扮出美妙家 摄影师的创意空间</strong>
+                        </a>
+                        <font>2016-07-19</font>
+                        <p>
+                            一个摄影师知道，客厅之后藏着的是整个生活。经由客厅，她能够碰
+                            触并捕捉着关于生活的真谛。动线流畅的大开间，回..
+                        </p>
+                        <span>
+                            标签:
+                            <a href="">美妙</a>
+                            <a href="">创意空间</a>
+                            <a href="">摄影</a>
+                            <a href="">绿植</a>
+                        </span>
+                          
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div id="footer">
+            <!-- 关于我们 -->
+            <div id="footer-us">
+                <h4>关于我们</h4>
+                <p>
+                    LO是目前国内专业的高级软装搭配设计品牌之一；同时在后期产品链环节上
+                    也是一家集专业设计、生产、施工等配套服务及项目管理于一体的专业室内软装设计机构。
+                </p>
+                <span>
+                    <a href=""><img src="./bQQ.png" alt="qq"></a>
+                    <a href=""><img src="./bweixin.png" alt="weixin"></a>
+                    <a href=""><img src="./bxinlang.png" alt="xinlang"></a>
+                </span>
+            </div>
+            <!-- 联系我们 -->
+            <div id="footer-contact">
+                <h4>联系我们</h4>
+                <ul>
+                    <li>
+                        <img src="./baddr.png" alt="addr" />
+                        <span>湖南省长沙市洋湖总部经济区</span>
+                    </li>
+                    <li>
+                        <img src="./bphone.png" alt="phone" />
+                        <span>4000-000-000</span>
+                    </li>
+                    <li>
+                        <img src="./bemail.png" alt="email" />
+                        <span>email@email.mt</span>
+                    </li>
+                    <li>
+                        <img src="./bcz.png" alt="cz" />
+                        <span>400000000</span>
+                    </li>
+                    <li>
+                        <img src="./bly.png" alt="ly" />
+                        <span><a href="">立即留言</a></span>
+                    </li>
+                </ul>
+            </div>
+            <!-- 新闻资讯 -->
+            <div id="footer-news">
+                <h4>新闻资讯</h4>
+                <ul>
+                    <li>
+                        <img src="./footer_news_1.jpg" alt="news" />
+                        <span>
+                            <a href="">宅在“云端”里 简约却不简单的文艺美宅</a>
+                            <font>2016-07-19</font>
+                        </span>
+                    </li>
+                    <li>
+                        <img src="./footer_news_2.jpg" alt="news" />
+                        <span>
+                            <a href="">让家春暖花开 美丽姑娘的优雅出租屋</a>
+                            <font>2016-07-19</font>
+                        </span>
+                    </li>
+                    <li>
+                        <img src="./footer_news_3.jpg" alt="news" />
+                        <span>
+                            <a href="">走在潮流顶端 小建材打造现代时尚家装</a>
+                            <font>2016-07-19</font>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- law -->
+        <div id="law">
+            <span>
+                友情链接: &nbsp;&nbsp;
+                <a href="">  / &nbsp;室内设计师</a>&nbsp;
+                <a href="">  / &nbsp;中国家居装修协会</a>
+                <font>Powered by <a href="">MetInfo</a> 6.0.0</font>
+            </span>
+            <span>
+                家居公司 | 室内设计公司 版权所有2008-2018 湘ICP备8888888
+            </span>
+        </div>
+    </div>
+</body>
+<script src="./index.js"></script>
+</html>
